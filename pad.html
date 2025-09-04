@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pad - Lemon</title>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="0eedaefe-bd0a-430b-84d1-abddf93e1341" data-blockingmode="auto" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="store.css">
+    <link rel="stylesheet" href="pad.css">
+  </head>
+  <body>
+    <!-- Lemon Store Navigation -->
+    <nav class="store-nav">
+      <div class="nav-container">
+        <!-- Lemon Logo -->
+        <div class="lemon-logo">
+          <a href="index.html">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <!-- LemOn Logo -->
+              <!-- Lemon fruit -->
+              <ellipse cx="8" cy="12" rx="4" ry="6" fill="#FFD700" stroke="#228B22" stroke-width="0.5"/>
+              <!-- Lemon texture dots -->
+              <circle cx="6.5" cy="10" r="0.3" fill="#FFA500"/>
+              <circle cx="7.5" cy="11" r="0.3" fill="#FFA500"/>
+              <circle cx="6" cy="13" r="0.3" fill="#FFA500"/>
+              <circle cx="8.5" cy="12" r="0.3" fill="#FFA500"/>
+              <circle cx="7" cy="14" r="0.3" fill="#FFA500"/>
+              <!-- Stem -->
+              <line x1="8" y1="6" x2="8" y2="8" stroke="#228B22" stroke-width="1"/>
+              <!-- Leaves -->
+              <ellipse cx="7" cy="5.5" rx="1.5" ry="0.8" fill="#228B22" transform="rotate(-20 7 5.5)"/>
+              <ellipse cx="9" cy="5.5" rx="1.5" ry="0.8" fill="#228B22" transform="rotate(20 9 5.5)"/>
+              <!-- LemOn Text -->
+              <text x="14" y="16" font-family="serif" font-size="8" font-weight="bold" fill="currentColor">LemON</text>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Store Navigation -->
+        <div class="store-nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="store.html" class="nav-link">Store</a>
+          <a href="desktop.html" class="nav-link">Desktop</a>
+          <a href="pad.html" class="nav-link active">Pad</a>
+          <a href="phone.html" class="nav-link">Phone</a>
+          <a href="watch.html" class="nav-link">Watch</a>
+        </div>
+
+        <!-- Store Actions -->
+        <div class="store-actions">
+          <div class="search-icon">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
+              <path d="M12.5 11h-.79l-.28-.27C12.41 9.59 13 8.11 13 6.5 13 2.91 10.09 0 6.5 0S0 2.91 0 6.5 2.91 13 6.5 13c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L17.49 16l-4.99-5zm-6 0C4.01 11 2 8.99 2 6.5S4.01 2 6.5 2 11 4.01 11 6.5 8.99 11 6.5 11z"/>
+            </svg>
+          </div>
+          <div class="bag-icon" id="bag-icon">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
+              <path d="M7 18c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM1 7c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5zm5-3c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm7 3c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5zm5-3c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z"/>
+            </svg>
+            <span class="bag-count" id="bag-count">0</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Pad Hero Section -->
+    <section class="ipad-hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Pad</h1>
+        <p class="hero-subtitle">Powerful. Versatile. Designed for everything you do.</p>
+        <div class="hero-actions">
+          <a href="store.html" class="cta-button primary">Shop Pad</a>
+          <a href="#learn-more" class="cta-button secondary">Learn more</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="ipad-showcase">
+          <div class="ipad-device">
+            <div class="screen"></div>
+            <div class="home-button"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pad Product Lineup -->
+    <section class="ipad-products">
+      <div class="container">
+        <h2 class="section-title">Choose your LemOn Pad</h2>
+        <div class="product-grid">
+          <!-- Pad Pro -->
+          <div class="product-card">
+            <div class="product-image">
+              <div class="pad-pro-preview"></div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Pad Pro</h3>
+              <p class="product-description">Supercharged by M3</p>
+              <div class="product-pricing">
+                <span class="price">From $799</span>
+              </div>
+              <div class="product-actions">
+                <a href="store.html" class="btn-primary">Buy</a>
+                <a href="#learn-more" class="btn-secondary">Learn more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pad Air -->
+          <div class="product-card">
+            <div class="product-image">
+              <div class="pad-air-preview"></div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Pad Air</h3>
+              <p class="product-description">Powerful. Colorful. Wonderful.</p>
+              <div class="product-pricing">
+                <span class="price">From $599</span>
+              </div>
+              <div class="product-actions">
+                <a href="store.html" class="btn-primary">Buy</a>
+                <a href="#learn-more" class="btn-secondary">Learn more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pad -->
+          <div class="product-card">
+            <div class="product-image">
+              <div class="pad-preview"></div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Pad</h3>
+              <p class="product-description">All the essentials in the most affordable Pad</p>
+              <div class="product-pricing">
+                <span class="price">From $449</span>
+              </div>
+              <div class="product-actions">
+                <a href="store.html" class="btn-primary">Buy</a>
+                <a href="#learn-more" class="btn-secondary">Learn more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pad mini -->
+          <div class="product-card">
+            <div class="product-image">
+              <div class="pad-mini-preview"></div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Pad mini</h3>
+              <p class="product-description">Small in size. Big on performance.</p>
+              <div class="product-pricing">
+                <span class="price">From $499</span>
+              </div>
+              <div class="product-actions">
+                <a href="store.html" class="btn-primary">Buy</a>
+                <a href="#learn-more" class="btn-secondary">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pad Features Section -->
+    <section class="ipad-features">
+      <div class="container">
+        <h2 class="section-title">Why Pad?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor">
+                <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm-2 30l-8-8 2.83-2.83L22 28.34l10.17-10.17L35 20l-13 14z"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">PadOS</h3>
+            <p class="feature-description">The most advanced tablet operating system</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor">
+                <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm-2 30l-8-8 2.83-2.83L22 28.34l10.17-10.17L35 20l-13 14z"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Apple Pencil</h3>
+            <p class="feature-description">Draw, write, and create with precision</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor">
+                <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm-2 30l-8-8 2.83-2.83L22 28.34l10.17-10.17L35 20l-13 14z"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Magic Keyboard</h3>
+            <p class="feature-description">Transform your Pad into a laptop</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor">
+                <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm-2 30l-8-8 2.83-2.83L22 28.34l10.17-10.17L35 20l-13 14z"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">All-Day Battery</h3>
+            <p class="feature-description">Work and play for hours without charging</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pad Accessories Section -->
+    <section class="ipad-accessories">
+      <div class="container">
+        <h2 class="section-title">Pad Accessories</h2>
+        <div class="accessories-grid">
+          <div class="accessory-card">
+            <div class="accessory-image">
+              <div class="apple-pencil"></div>
+            </div>
+            <h3 class="accessory-name">Apple Pencil</h3>
+            <p class="accessory-price">$99</p>
+            <a href="store.html" class="btn-primary">Buy</a>
+          </div>
+
+          <div class="accessory-card">
+            <div class="accessory-image">
+              <div class="magic-keyboard-ipad"></div>
+            </div>
+            <h3 class="accessory-name">Magic Keyboard</h3>
+            <p class="accessory-price">$299</p>
+            <a href="store.html" class="btn-primary">Buy</a>
+          </div>
+
+          <div class="accessory-card">
+            <div class="accessory-image">
+              <div class="smart-cover"></div>
+            </div>
+            <h3 class="accessory-name">Smart Cover</h3>
+            <p class="accessory-price">$79</p>
+            <a href="store.html" class="btn-primary">Buy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="ipad-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Shop and Learn</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="store.html">Store</a></li>
+              <li><a href="desktop.html">Desktop</a></li>
+              <li><a href="pad.html">Pad</a></li>
+              <li><a href="phone.html">Phone</a></li>
+              <li><a href="watch.html">Watch</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#apple-music">Apple Music</a></li>
+              <li><a href="#apple-tv">Apple TV+</a></li>
+              <li><a href="#apple-fitness">Apple Fitness+</a></li>
+              <li><a href="#icloud">iCloud</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#help">Help</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#warranty">Warranty</a></li>
+              <li><a href="#repair">Repair</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 LemOn Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="pad.js"></script>
+    <!-- Piwik Pro Tracking Script -->
+    <script type="text/javascript" data-cookieconsent="statistics">
+    (function(window, document, dataLayerName, id) {
+    window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
+    var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName);var qPString=qP.length>0?("?"+qP.join("&")):"";
+    tags.async=!0,tags.src="https://new-trial.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+    !function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
+    })(window, document, 'dataLayer', '8bbc1d75-c62e-45dc-beb2-5d11a170384d');
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,492 @@
+/* Desktop Page CSS */
+
+/* Desktop Hero Section */
+.mac-hero {
+  background: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: 44px;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.cta-button.primary {
+  background: #0071e3;
+  color: #fff;
+  border: none;
+}
+
+.cta-button.primary:hover {
+  background: #0077ed;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 113, 227, 0.3);
+}
+
+.cta-button.secondary {
+  background: transparent;
+  color: #0071e3;
+  border: 1px solid #0071e3;
+}
+
+.cta-button.secondary:hover {
+  background: #0071e3;
+  color: #fff;
+}
+
+.hero-visual {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  z-index: 1;
+  opacity: 0.1;
+}
+
+.mac-device-showcase {
+  width: 400px;
+  height: 300px;
+  position: relative;
+}
+
+.macbook-pro {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: perspective(1000px) rotateY(-15deg) rotateX(5deg);
+}
+
+.macbook-pro .screen {
+  width: 80%;
+  height: 60%;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border-radius: 8px 8px 0 0;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  border: 2px solid #333;
+}
+
+.macbook-pro .base {
+  width: 90%;
+  height: 40%;
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  border-radius: 0 0 8px 8px;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  border: 2px solid #333;
+}
+
+/* Desktop Products Section */
+.mac-products {
+  padding: 80px 0;
+  background: #f5f5f7;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #1d1d1f;
+  letter-spacing: -0.02em;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.macbook-pro-preview,
+.macbook-air-preview,
+.imac-preview,
+.mac-studio-preview,
+.mac-pro-preview,
+.mac-mini-preview {
+  width: 120px;
+  height: 80px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border-radius: 8px;
+  position: relative;
+  border: 2px solid #333;
+}
+
+.macbook-air-preview {
+  background: linear-gradient(135deg, #f5f5f7 0%, #e5e5e7 100%);
+  border-color: #d1d1d6;
+}
+
+.imac-preview {
+  background: linear-gradient(135deg, #0071e3 0%, #005bb5 100%);
+  border-color: #005bb5;
+}
+
+.mac-studio-preview {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  height: 60px;
+}
+
+.mac-pro-preview {
+  background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
+  height: 100px;
+}
+
+.mac-mini-preview {
+  background: linear-gradient(135deg, #f5f5f7 0%, #e5e5e7 100%);
+  border-color: #d1d1d6;
+  height: 60px;
+  width: 80px;
+}
+
+.product-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 0.5rem;
+}
+
+.product-description {
+  color: #86868b;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.product-pricing {
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+
+.product-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #0071e3;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #0077ed;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #0071e3;
+  border: 1px solid #0071e3;
+}
+
+.btn-secondary:hover {
+  background: #0071e3;
+  color: #fff;
+}
+
+/* Desktop Features Section */
+.mac-features {
+  padding: 80px 0;
+  background: #000;
+  color: #fff;
+}
+
+.mac-features .section-title {
+  color: #fff;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 2rem;
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: #0071e3;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.feature-description {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+}
+
+/* Desktop Accessories Section */
+.mac-accessories {
+  padding: 80px 0;
+  background: #f5f5f7;
+}
+
+.accessories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.accessory-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.accessory-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.accessory-image {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.magic-mouse,
+.magic-keyboard,
+.magic-trackpad {
+  width: 80px;
+  height: 50px;
+  background: linear-gradient(135deg, #f5f5f7 0%, #e5e5e7 100%);
+  border-radius: 8px;
+  border: 1px solid #d1d1d6;
+}
+
+.magic-keyboard {
+  height: 40px;
+}
+
+.magic-trackpad {
+  height: 60px;
+  width: 100px;
+}
+
+.accessory-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 0.5rem;
+}
+
+.accessory-price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 1rem;
+}
+
+/* Desktop Footer */
+.mac-footer {
+  background: #f5f5f7;
+  padding: 40px 0 20px;
+  border-top: 1px solid #d2d2d7;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #424245;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #0071e3;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #d2d2d7;
+}
+
+.footer-bottom p {
+  color: #86868b;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-visual {
+    display: none;
+  }
+  
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .accessories-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .product-card,
+  .accessory-card {
+    padding: 1.5rem;
+  }
+  
+  .hero-content {
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><!--remix-island-start--><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Bolt AI builder: Websites, apps &amp; prototypes</title><meta property="description" content="Build and scale high-performing websites &amp; apps using your words. Join millions and start building today."/><meta property="og:type" content="object"/><meta property="og:site_name" content="bolt.new"/><meta property="og:title" content="Bolt AI builder: Websites, apps &amp; prototypes"/><meta property="og:image" content="https://bolt.new/static/social_preview_index.jpg"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Bolt AI builder: Websites, apps &amp; prototypes"/><meta name="twitter:description" content="Prompt, run, edit &amp; publish apps"/><meta name="twitter:image" content="https://bolt.new/static/social_preview_index.jpg"/><meta name="twitter:site" content="@StackBlitz"/><meta name="bolt-version" content="bd6be86"/><link rel="stylesheet" href="/assets/root-_niKu9-3.css"/><link rel="stylesheet" href="/assets/LightRays-apN2LHcc.css"/><link rel="icon" href="/static/favicon.svg" type="image/svg+xml"/><link rel="stylesheet" href="/assets/ReactToastify-Bh76j7cs.css"/><link rel="stylesheet" href="/assets/tailwind-compat-Bwh-BmjE.css"/><link rel="stylesheet" href="/assets/index-_5AU319r.css"/><link rel="stylesheet" href="/assets/xterm-LZoznX6r.css"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"/><link rel="stylesheet" href="/assets/useTeamInvites-2lP7qIO8.css"/><link rel="stylesheet" href="/assets/Chat-DEw1q4XJ.css"/><link rel="stylesheet" href="/assets/Pricing-CzqnVCjZ.css"/><script>(function createWorkaroundGlobal() {
+  window["__name"] = () => {
+  };
+})();</script><script>(function blockDOMMutations() {
+  const observer = new MutationObserver((mutations) => {
+    observer.disconnect();
+    mutations.reverse().forEach((mutation) => {
+      if (mutation.type === "childList") {
+        mutation.addedNodes.forEach((node2) => {
+          if ([document.head, document.body, document.documentElement].includes(node2.parentNode)) {
+            return;
+          }
+          if (node2.parentNode) {
+            node2.parentNode.removeChild(node2);
+          }
+        });
+        mutation.removedNodes.forEach((node2) => {
+          if (mutation.previousSibling) {
+            mutation.target.insertBefore(node2, mutation.previousSibling.nextSibling);
+          } else if (mutation.target) {
+            mutation.target.appendChild(node2);
+          }
+        });
+      }
+      if (mutation.type === "attributes") {
+        const { target, attributeName, oldValue } = mutation;
+        if (attributeName) {
+          if (oldValue === null) {
+            target.removeAttribute(attributeName);
+          } else {
+            target.setAttribute(attributeName, oldValue);
+          }
+        }
+      }
+      if (mutation.type === "characterData") {
+        mutation.target.data = mutation.oldValue ?? "";
+      }
+    });
+    observe();
+  });
+  function observe() {
+    observer.observe(document, {
+      subtree: true,
+      childList: true,
+      attributes: true,
+      attributeOldValue: true,
+      characterData: true,
+      characterDataOldValue: true
+    });
+  }
+  __name(observe, "observe");
+  window.addEventListener("DOMContentLoaded", observe);
+  window.__allowDOMMutations = () => {
+    observer.disconnect();
+  };
+})();</script><script>(function themeCode(storageKey, defaultTheme) {
+  if (window.location.pathname !== "/figma") {
+    setBoltTheme();
+  }
+  function setBoltTheme() {
+    const htmlElement = document.querySelector("html");
+    const localTheme = localStorage.getItem(storageKey);
+    const metaElement = document.querySelector("meta[name=bolt-theme]");
+    let theme = metaElement?.content ?? localTheme ?? defaultTheme;
+    htmlElement.setAttribute("data-theme-option", theme);
+    if (theme === "system") {
+      const prefersDark2 = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      theme = prefersDark2 ? "dark" : "light";
+    }
+    htmlElement.setAttribute("data-theme", theme);
+  }
+  __name(setBoltTheme, "setBoltTheme");
+})("bolt_theme", "dark");</script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-58KJM59B');</script><script>(function sentryLoader(environment, userElementId) {
+  window.sentryOnLoad = () => {
+    Sentry.init({
+      release: "bd6be8662de5f7ae0c1133a37dfab62a2b49584b",
+      ignoreTransactions: ["/api/token/cors", "/api/analytics"],
+      ignoreErrors: ["/api/token/cors", "/api/analytics"],
+      // https://docs.sentry.io/platforms/javascript/session-replay/
+      replaysSessionSampleRate: 0,
+      replaysOnErrorSampleRate: 0,
+      sampleRate: 0.02,
+      tracesSampleRate: 0.05,
+      enabled: environment !== "development",
+      debug: false,
+      allowUrls: ["bolt.new", "pages.dev"],
+      environment
+    });
+    const userSource = document.getElementById(userElementId)?.textContent;
+    if (!userSource) {
+      return;
+    }
+    Sentry.setUser(JSON.parse(userSource ?? "null"));
+  };
+})("production", "sentry-initial-user-data");</script><script src="https://js.sentry-cdn.com/63c9c85c78964d27b2264b54d8439bd3.min.js" crossorigin="anonymous"></script><!--remix-island-end--></head><body class="bg-bolt-elements-background-depth-1"><div id="root" class="w-full h-full"><div class="flex flex-col h-full w-full"><header class="flex shrink-0 select-none selection-accent items-center pl-5 pr-4 border-b h-[var(--header-height)] z-21 fixed w-full backdrop-blur-[17px] border-transparent"><div class="flex grow-1 basis-60 items-center gap-2 text-bolt-elements-textPrimary"><div class="z-logo"><a href="/" class="text-2xl font-semibold text-accent flex items-center"><span class="i-bolt:logos-bolt-new?mask w-[70.5px] inline-block"></span></a></div></div><div class="flex grow-1 basis-60 justify-end items-center gap-3"></div></header><div class="_BaseChat_x7a2h_1 relative flex h-full w-full overflow-hidden bg-bolt-elements-background-depth-1" data-chat-visible="true"><div class="flex overflow-auto size-full overscroll-contain flex-col relative"><div class="_Chat_x7a2h_5 selection-accent flex flex-col flex-grow relative z-9"><div class="flex flex-col mt-[220px] mx-[var(--chat-padding)]"><h1 class="text-[44px] text-center font-semibold text-bolt-elements-textPrimary tracking-tight">What should we build today?</h1><p class="mb-6 text-center text-bolt-ds-textTertiary max-w-[400px] mx-auto"><span>Create stunning apps &amp; websites by chatting with AI.</span></p></div><div class=""><div class="relative px-[var(--chat-padding)] w-full max-w-chat mx-auto z-prompt"><div class="relative shadow-xs p-[1px] overflow-clip rounded-2xl"><div class="relative rounded-2xl dark:bg-[rgba(31,31,31,0.95)] bg-white backdrop-blur-[7px] _GradientBorder_1k1wl_5"><div class="border-b-px border-transparent"></div><div class="relative select-none"><textarea class="w-full pl-4 pt-4 pr-16 focus:outline-none resize-none text-bolt-elements-textPrimary placeholder-bolt-elements-textTertiary bg-transparent text-sm" style="min-height:76px;max-height:200px" placeholder="Type your idea and we&#x27;ll build it together." translate="no"></textarea></div><div class="flex justify-between text-sm p-4 pt-2"><div class="flex gap-1 items-center w-full"><input type="file" aria-hidden="true" tabindex="-1" style="display:none;visibility:hidden" accept=".jpg,.jpeg,.png,.gif,.webp,.svg,.pdf,.txt,.doc,.docx,.py,.ipynb,.js,.mjs,.cjs,.jsx,.html,.css,.scss,.sass,.ts,.tsx,.java,.cs,.php,.c,.cc,.cpp,.cxx,.h,.hh,.hpp,.rs,.swift,.go,.rb,.kt,.kts,.scala,.sh,.bash,.zsh,.bat,.csv,.log,.ini,.cfg,.config,.json,.yaml,.yml,.toml,.lua,.sql,.md,.tex,.latex,.asm,.ino,.s" multiple=""/><button class="flex items-center text-bolt-elements-item-contentDefault bg-transparent rounded-md disabled:cursor-not-allowed enabled:hover:text-bolt-elements-item-contentActive enabled:hover:bg-bolt-elements-item-backgroundActive p-1" aria-label="Upload files" data-state="closed"><div class="i-ph:link-simple text-xl"></div></button><button class="flex items-center text-bolt-elements-item-contentDefault bg-transparent rounded-md disabled:cursor-not-allowed enabled:hover:text-bolt-elements-item-contentActive enabled:hover:bg-bolt-elements-item-backgroundActive p-1 opacity-30" disabled="" data-state="closed"><div class="i-bolt:stars text-xl"></div></button><div class="flex-1"></div></div><div class="flex items-center gap-3"></div></div></div></div><div class="pb-[var(--chat-padding)]"></div></div></div></div></div></div></div><script>((STORAGE_KEY2, restoreKey) => {
+    if (!window.history.state || !window.history.state.key) {
+      let key2 = Math.random().toString(32).slice(2);
+      window.history.replaceState({
+        key: key2
+      }, "");
+    }
+    try {
+      let positions = JSON.parse(sessionStorage.getItem(STORAGE_KEY2) || "{}");
+      let storedY = positions[restoreKey || window.history.state.key];
+      if (typeof storedY === "number") {
+        window.scrollTo(0, storedY);
+      }
+    } catch (error5) {
+      console.error(error5);
+      sessionStorage.removeItem(STORAGE_KEY2);
+    }
+  })("positions", null)</script><link rel="modulepreload" href="/assets/manifest-696e15c0.js"/><link rel="modulepreload" href="/assets/entry.client-B92WmvOF.js"/><link rel="modulepreload" href="/assets/jsx-runtime-cce7UNJc.js"/><link rel="modulepreload" href="/assets/index-CEgDDyga.js"/><link rel="modulepreload" href="/assets/appsignal.client-D6i8TTzO.js"/><link rel="modulepreload" href="/assets/node-CxhRcEXP.js"/><link rel="modulepreload" href="/assets/performance-CceX9gPR.js"/><link rel="modulepreload" href="/assets/components--AdXnCt9.js"/><link rel="modulepreload" href="/assets/constants-CMsS6Ayn.js"/><link rel="modulepreload" href="/assets/invariant-hER6ff2J.js"/><link rel="modulepreload" href="/assets/index-DkYL9049.js"/><link rel="modulepreload" href="/assets/index-Baz-IS2I.js"/><link rel="modulepreload" href="/assets/server.browser-FHqt52es.js"/><link rel="modulepreload" href="/assets/client-only-BilPzOgt.js"/><link rel="modulepreload" href="/assets/ErrorBoundary-BGvl8_Zq.js"/><link rel="modulepreload" href="/assets/stripIndent-C54wf1OX.js"/><link rel="modulepreload" href="/assets/Alert-HMBS7_vz.js"/><link rel="modulepreload" href="/assets/Button-CF0KDKFu.js"/><link rel="modulepreload" href="/assets/IconButton-DgOLsNdW.js"/><link rel="modulepreload" href="/assets/classNames-Bd_An7Dj.js"/><link rel="modulepreload" href="/assets/Header-C8mz5uW-.js"/><link rel="modulepreload" href="/assets/config-CiHPIKpN.js"/><link rel="modulepreload" href="/assets/tslib.es6-C0oMyZoB.js"/><link rel="modulepreload" href="/assets/urls-xGTwPLvE.js"/><link rel="modulepreload" href="/assets/login-B6L_gqi8.js"/><link rel="modulepreload" href="/assets/LoadingDots-DMZ0Xw3q.js"/><link rel="modulepreload" href="/assets/oauth-BNJg-wUc.js"/><link rel="modulepreload" href="/assets/token-h8SVl6P0.js"/><link rel="modulepreload" href="/assets/BaseHeader-DAvz2-9v.js"/><link rel="modulepreload" href="/assets/Link-Cbd9YsjB.js"/><link rel="modulepreload" href="/assets/description-Df82r7zD.js"/><link rel="modulepreload" href="/assets/LightRays.client-sGJm0Tae.js"/><link rel="modulepreload" href="/assets/LightRaysCore-DhkXWWV6.js"/><link rel="modulepreload" href="/assets/LightRays.module-D1IyOYT6.js"/><link rel="modulepreload" href="/assets/LegacyIconButton-7jS2R8xG.js"/><link rel="modulepreload" href="/assets/root-CoQQLRPM.js"/><link rel="modulepreload" href="/assets/Input-BgJmAE0L.js"/><link rel="modulepreload" href="/assets/Avatar-DnSgyQXi.js"/><link rel="modulepreload" href="/assets/Switch-BrXgBXX0.js"/><link rel="modulepreload" href="/assets/withSpinner-BfssmcCZ.js"/><link rel="modulepreload" href="/assets/format-CRm7K_5B.js"/><link rel="modulepreload" href="/assets/useTeamInvites-Crpr6eV2.js"/><link rel="modulepreload" href="/assets/index-C6RL2bNT.js"/><link rel="modulepreload" href="/assets/index-Bbup0CnS.js"/><link rel="modulepreload" href="/assets/pricing-Qadi49pt.js"/><link rel="modulepreload" href="/assets/debounce-BVjH5mN8.js"/><link rel="modulepreload" href="/assets/request-with-auth-FrCbjxDp.js"/><link rel="modulepreload" href="/assets/Pagination-DCoKT40l.js"/><link rel="modulepreload" href="/assets/_chat-Ds6G8nCo.js"/><link rel="modulepreload" href="/assets/Chat.client-D9EWv1Uz.js"/><link rel="modulepreload" href="/assets/IndexLayout-DuvTATuu.js"/><link rel="modulepreload" href="/assets/applicationManager-BDTmQN6-.js"/><link rel="modulepreload" href="/assets/meta-szUuKw7l.js"/><link rel="modulepreload" href="/assets/ConnectToFigmaDialog-B1Dfjyuy.js"/><link rel="modulepreload" href="/assets/LegacyDialog-CsOmohpX.js"/><link rel="modulepreload" href="/assets/workbench-BqfAck6y.js"/><link rel="modulepreload" href="/assets/nanostore-BF3R4tPd.js"/><link rel="modulepreload" href="/assets/stripe-CSPh2Ueh.js"/><link rel="modulepreload" href="/assets/client-error-BzcvMMyy.js"/><link rel="modulepreload" href="/assets/domains-CkWMJCVH.js"/><link rel="modulepreload" href="/assets/helpers-CnHHhdLm.js"/><link rel="modulepreload" href="/assets/openWithStackblitzAuth-CfJZKyN0.js"/><link rel="modulepreload" href="/assets/client-github-BN0Acr7v.js"/><link rel="modulepreload" href="/assets/Pricing.client-DCysjRhv.js"/><link rel="modulepreload" href="/assets/isYesterday-D_VItgq_.js"/><link rel="modulepreload" href="/assets/getRoundingMethod-D1xSZRUh.js"/><link rel="modulepreload" href="/assets/animationVariants-Cv_bUeAt.js"/><link rel="modulepreload" href="/assets/index-Cqt8FN5o.js"/><link rel="modulepreload" href="/assets/connect._provider-CRblGVeD.js"/><link rel="modulepreload" href="/assets/bolt-connect-BKGIJ9GA.js"/><link rel="modulepreload" href="/assets/api-CJHFkvxY.js"/><link rel="modulepreload" href="/assets/prepare-body-CC9vqTr2.js"/><link rel="modulepreload" href="/assets/projectVisibility-C9FaU8j5.js"/><link rel="modulepreload" href="/assets/github-CWl9F6N1.js"/><link rel="modulepreload" href="/assets/useProjectVisibility-DP8IQv5Z.js"/><link rel="modulepreload" href="/assets/DiscordSupportModal-fV1M4xgR.js"/><link rel="modulepreload" href="/assets/scroll-overflow-mask-lbU2sr0u.js"/><link rel="modulepreload" href="/assets/formatDistanceToNow-D8NAU7OR.js"/><link rel="modulepreload" href="/assets/_chat._index-CBmg5I9T.js"/><script>window.__remixContext = {"basename":"/","future":{"v3_fetcherPersist":true,"v3_relativeSplatPath":true,"v3_throwAbortReason":true,"v3_singleFetch":false,"v3_lazyRouteDiscovery":false,"unstable_optimizeDeps":false},"isSpaMode":false,"state":{"loaderData":{"root":{"user":null},"routes/_chat._index":{"loggedIn":false},"routes/_chat":null},"actionData":null,"errors":null}};</script><script type="module" async="">import "/assets/manifest-696e15c0.js";
+import * as route0 from "/assets/root-CoQQLRPM.js";
+import * as route1 from "/assets/_chat-Ds6G8nCo.js";
+import * as route2 from "/assets/_chat._index-CBmg5I9T.js";
+
+window.__remixRouteModules = {"root":route0,"routes/_chat":route1,"routes/_chat._index":route2};
+
+import("/assets/entry.client-B92WmvOF.js");</script></div></body></html>
